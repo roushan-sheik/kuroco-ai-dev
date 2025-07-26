@@ -1,10 +1,17 @@
+.login_bg {
+  background: linear-gradient(
+    169.99deg,
+    rgb(239, 246, 255) 0%,
+    rgb(224, 231, 255) 100%
+  );
+}
 .border_pri {
   box-sizing: border-box;
   border: 1px solid rgb(229, 231, 235);
   border-radius: 6px;
 }
 .text_brand {
-  color: #3b82f6;
+  color: var(--primary);
 }
 .text_pri {
   color: rgb(17, 24, 39);

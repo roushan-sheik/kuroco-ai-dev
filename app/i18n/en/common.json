@@ -1,5 +1,30 @@
 {
   "welcome": "Welcome",
   "language": "Language",
-  "selectLanguage": "Select language"
+  "selectLanguage": "Select language",
+
+  "emailAddress": "Email Address",
+  "password": "Password",
+  "keepMeLoggedIn": "Keep me logged in",
+  "login": "Login",
+  "loggingIn": "Logging in...",
+  "forgotPassword": "Forgot your password?",
+  "noAccount": "Don't have an account?",
+  "signUpHere": "Sign up here",
+
+  "firstName": "First Name",
+  "lastName": "Last Name",
+  "firstNamePlaceholder": "Enter your first name",
+  "lastNamePlaceholder": "Enter your last name",
+  "confirmPassword": "Confirm Password",
+  "passwordPlaceholder": "Enter your password",
+  "confirmPasswordPlaceholder": "Confirm your password",
+  "agreeToTerms": "I agree to the",
+  "termsAndConditions": "Terms and Conditions",
+  "and": "and",
+  "privacyPolicy": "Privacy Policy",
+  "register": "Register",
+  "registering": "Registering...",
+  "alreadyHaveAccount": "Already have an account?",
+  "loginHere": "Login here"
 }
