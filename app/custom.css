@@ -1,0 +1,17 @@
+.border_pri {
+  box-sizing: border-box;
+  border: 1px solid rgb(229, 231, 235);
+  border-radius: 6px;
+}
+.text_brand {
+  color: #3b82f6;
+}
+.text_pri {
+  color: rgb(17, 24, 39);
+}
+.text_sec {
+  color: #374151;
+}
+.text_third {
+  color: #9ca3af;
+}

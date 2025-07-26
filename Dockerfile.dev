@@ -1,0 +1,18 @@
+# Dockerfile.dev
+FROM node:20-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Install dependencies
+COPY package.json package-lock.json ./
+RUN npm install
+
+# Copy source code
+COPY . .
+
+# Expose dev port (React Router dev server usually runs on 3000)
+EXPOSE 5173
+
+# Start dev mode
+CMD ["npm", "run", "dev"]
