@@ -16,6 +16,7 @@ const CreateNewProjectPage: React.FC = () => {
       description: "aiDescription",
       icon: <Bot className="w-8 h-8 text-white" />,
       color: "bg-blue-500",
+      route: "#",
     },
     {
       id: "template",
@@ -23,6 +24,7 @@ const CreateNewProjectPage: React.FC = () => {
       description: "templateDescription",
       icon: <FileText className="w-8 h-8 text-white" />,
       color: "bg-green-500",
+      route: "#",
     },
     {
       id: "free-form",
@@ -30,6 +32,7 @@ const CreateNewProjectPage: React.FC = () => {
       description: "freeFormDescription",
       icon: <Edit3 className="w-8 h-8 text-white" />,
       color: "bg-purple-500",
+      route: "/create-new-project/team-selection",
     },
     {
       id: "import",
@@ -37,6 +40,7 @@ const CreateNewProjectPage: React.FC = () => {
       description: "importDescription",
       icon: <Upload className="w-8 h-8 text-white" />,
       color: "bg-gray-800",
+      route: "#",
     },
   ];
 
@@ -51,11 +55,11 @@ const CreateNewProjectPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 mt-12 py-8 px-4">
+    <div className="min-h-screen bg-gray-50  py-8 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className=" mb-12">
-          <h1 className="text-3xl font-bold text-gray-900 mb-3">
+        <div className="text-center lg:text-start mb-12">
+          <h1 className="text-3xl font-bold title mb-3">
             {t("createNewProject")}
           </h1>
           <p className="text-lg text-gray-600">{t("selectCreationMethod")}</p>

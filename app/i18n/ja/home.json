@@ -17,5 +17,12 @@
   "freeFormDescription": "ゼロから自由に要件定義書を作成します",
   "import": "インポート",
   "importDescription": "既存ファイルや録音データから自動生成します",
-  "back": "戻る"
+  "back": "戻る",
+
+  "teamSelection": "チーム選択",
+  "teamSelectionDescription": "プロジェクトチームを選択してください",
+  "developmentTeam": "開発チーム",
+  "addToExistingTeam": "既存のチームに追加",
+  "private": "プライベート",
+  "privateDescription": "個人プロジェクト"
 }

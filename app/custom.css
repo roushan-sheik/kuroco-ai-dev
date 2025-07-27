@@ -10,6 +10,9 @@
   border: 1px solid rgb(229, 231, 235);
   border-radius: 6px;
 }
+.title {
+  color: #111827;
+}
 .text_brand {
   color: var(--primary);
 }

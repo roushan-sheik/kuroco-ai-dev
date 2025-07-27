@@ -1,8 +1,7 @@
-export type ProjectCreationOption = {
+export type TeamOption = {
   id: string;
   title: string;
   description: string;
   icon: React.ReactNode;
-  color: string;
-  route: string;
+  iconColor: string;
 };

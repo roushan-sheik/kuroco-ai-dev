@@ -17,5 +17,12 @@
   "freeFormDescription": "Create requirements document freely from scratch",
   "import": "Import",
   "importDescription": "Auto-generate from existing files or recorded data",
-  "back": "Back"
+  "back": "Back",
+
+  "teamSelection": "Team Selection",
+  "teamSelectionDescription": "Please select the project team",
+  "developmentTeam": "Development Team",
+  "addToExistingTeam": "Add to existing team",
+  "private": "Private",
+  "privateDescription": "Personal project"
 }

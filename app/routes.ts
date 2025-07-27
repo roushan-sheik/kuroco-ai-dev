@@ -12,5 +12,9 @@ export default [
   layout("components/layout/MainLayout.tsx", [
     index("routes/_layout/index.tsx"),
     route("/create-new-project", "routes/_layout/CreateNewProject.tsx"),
+    route(
+      "/create-new-project/team-selection",
+      "routes/_layout/TeamSelection.tsx"
+    ),
   ]),
 ] satisfies RouteConfig;
