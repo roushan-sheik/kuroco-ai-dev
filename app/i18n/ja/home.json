@@ -6,5 +6,16 @@
   "createInterviewSheet": "ヒアリングシートを作成",
   "conductInterviews": "効率的なヒアリングを実施",
   "searchResults": "検索結果",
-  "recentAccessHistory": "最近のアクセス履歴"
+  "recentAccessHistory": "最近のアクセス履歴",
+
+  "selectCreationMethod": "作成方法を選択してください",
+  "aiSupportedAutoGeneration": "AI支援の自動生成",
+  "aiDescription": "質問に答えることで要件定義書を自動生成します",
+  "templateBasedCreation": "テンプレートベースの作成",
+  "templateDescription": "構造化されたテンプレートで効率的に作成します",
+  "freeForm": "フリーフォーム",
+  "freeFormDescription": "ゼロから自由に要件定義書を作成します",
+  "import": "インポート",
+  "importDescription": "既存ファイルや録音データから自動生成します",
+  "back": "戻る"
 }

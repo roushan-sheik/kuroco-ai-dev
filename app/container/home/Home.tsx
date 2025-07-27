@@ -1,7 +1,8 @@
 import React from "react";
-import { Search, Plus, FileText, File } from "lucide-react";
+import { Plus, FileText, File } from "lucide-react";
 import HomeSearch from "./components/HomeSearch";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router";
 
 const Home = () => {
   const { t } = useTranslation("home");
@@ -32,21 +33,23 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Create New Project Card */}
             <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-shadow cursor-pointer">
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0">
-                  <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                    <Plus className="w-5 h-5 text-blue-600" />
+              <NavLink to={"/create-new-project"}>
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                      <Plus className="w-5 h-5 text-blue-600" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-medium text-gray-900 mb-2">
+                      {t("createNewProject")}
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      {t("startRequirementsWithAI")}
+                    </p>
                   </div>
                 </div>
-                <div>
-                  <h3 className="text-lg font-medium text-gray-900 mb-2">
-                    {t("createNewProject")}
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    {t("startRequirementsWithAI")}
-                  </p>
-                </div>
-              </div>
+              </NavLink>
             </div>
 
             {/* Create Interview Sheet Card */}
