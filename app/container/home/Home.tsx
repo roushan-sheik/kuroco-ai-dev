@@ -1,5 +1,6 @@
 import React from "react";
 import { Search, Plus, FileText, File } from "lucide-react";
+import HomeSearch from "./components/HomeSearch";
 
 const Home = () => {
   const recentItems = [
@@ -68,16 +69,7 @@ const Home = () => {
         </div>
 
         {/* Search Bar */}
-        <div className="mb-8 relative">
-          <div className="relative">
-            <input
-              type="text"
-              placeholder="Search editors..."
-              className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
-            />
-          </div>
-          <Search className="absolute right-3 z-10 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
-        </div>
+        <HomeSearch />
 
         {/* Recent Access History Section */}
         <div>
