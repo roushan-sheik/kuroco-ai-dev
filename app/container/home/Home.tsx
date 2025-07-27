@@ -1,8 +1,10 @@
 import React from "react";
 import { Search, Plus, FileText, File } from "lucide-react";
 import HomeSearch from "./components/HomeSearch";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const { t } = useTranslation("home");
   const recentItems = [
     {
       id: 1,
@@ -24,7 +26,7 @@ const Home = () => {
         {/* Quick Actions Section */}
         <div className="mb-8">
           <h2 className="text-xl font-semibold text-gray-900 mb-6">
-            Quick Actions
+            {t("quickActions")}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -38,10 +40,10 @@ const Home = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-gray-900 mb-2">
-                    Create New Project
+                    {t("createNewProject")}
                   </h3>
                   <p className="text-sm text-gray-600">
-                    Start requirements definition with AI guidance
+                    {t("startRequirementsWithAI")}
                   </p>
                 </div>
               </div>
@@ -57,10 +59,10 @@ const Home = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-gray-900 mb-2">
-                    Create Interview Sheet
+                    {t("createInterviewSheet")}
                   </h3>
                   <p className="text-sm text-gray-600">
-                    Conduct efficient interviews
+                    {t("conductInterviews")}
                   </p>
                 </div>
               </div>
@@ -74,7 +76,7 @@ const Home = () => {
         {/* Recent Access History Section */}
         <div>
           <h2 className="text-xl font-semibold text-gray-900 mb-6">
-            Recent Access History
+            {t("recentAccessHistory")}
           </h2>
 
           <div className="space-y-4 rounded-lg border border-gray-200 lg:p-8 p-4 bg-white">

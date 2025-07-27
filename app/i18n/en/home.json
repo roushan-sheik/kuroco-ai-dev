@@ -1,12 +1,10 @@
 {
   "searchPlaceholder": "Search Editor...",
-  "quickActions": "Quick actions",
-  "createNewProject": "Create a new project",
-  "interviewSheetCreation": "Interview sheet creation",
-  "recentAccessHistory": "Recent access history",
-  "ecSiteRenewal": "EC site renewal",
-  "crmImplementationProject": "CRM implementation project",
-  "maToolSelection": "MA tool selection",
-  "requirementsSpecification": "Requirements Specification",
-  "interviewSheet": "Interview Sheet"
+  "quickActions": "Quick Actions",
+  "createNewProject": "Create New Project",
+  "startRequirementsWithAI": "Start requirements definition with AI guidance",
+  "createInterviewSheet": "Create Interview Sheet",
+  "conductInterviews": "Conduct efficient interviews",
+  "searchResults": "Search Results",
+  "recentAccessHistory": "Recent Access History"
 }

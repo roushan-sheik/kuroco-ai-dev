@@ -2,11 +2,13 @@ import { Search, FileText } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import type { SearchResult } from "../types/types";
 import { mockResults } from "../constants/searchResults";
+import { useTranslation } from "react-i18next";
 
 const HomeSearch = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [searchResults, setSearchResults] = useState<SearchResult[]>([]);
   const [isSearching, setIsSearching] = useState<boolean>(false);
+  const { t } = useTranslation("home");
 
   useEffect(() => {
     const filtered = mockResults.filter(
@@ -69,7 +71,7 @@ const HomeSearch = () => {
         <div className="bg-white rounded-lg border border-gray-200 shadow-sm">
           <div className="p-4 border-b border-gray-100">
             <h3 className="text-sm font-medium text-gray-900">
-              Search Results
+              {t("searchResults")}
             </h3>
           </div>
 

@@ -2,11 +2,9 @@
   "searchPlaceholder": "エディターを検索...",
   "quickActions": "クイックアクション",
   "createNewProject": "新しいプロジェクトを作成",
-  "interviewSheetCreation": "インタビューシート作成",
-  "recentAccessHistory": "最近のアクセス履歴",
-  "ecSiteRenewal": "ECサイトのリニューアル",
-  "crmImplementationProject": "CRM導入プロジェクト",
-  "maToolSelection": "MAツールの選定",
-  "requirementsSpecification": "要件定義書",
-  "interviewSheet": "インタビューシート"
+  "startRequirementsWithAI": "AIガイダンスで要件定義を開始",
+  "createInterviewSheet": "ヒアリングシートを作成",
+  "conductInterviews": "効率的なヒアリングを実施",
+  "searchResults": "検索結果",
+  "recentAccessHistory": "最近のアクセス履歴"
 }
