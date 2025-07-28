@@ -1,11 +1,20 @@
 import { ChevronDown, Menu } from "lucide-react";
 import { Link } from "react-router";
-import LanguageDropdown from "~/container/header/components/LanguageDropdown";
 import { useSidebar } from "~/context/ SidebarContext";
+import { useLanguage } from "~/context/LanguageContext";
+import HeaderUserProfile from "./components/HeaderUserProfile";
 
 const Header: React.FC = () => {
   const { toggle } = useSidebar();
+  const { language, setLanguage } = useLanguage();
 
+  const handleLanguageSwitcher = () => {
+    if (language === "ja") {
+      setLanguage("en");
+    } else {
+      setLanguage("ja");
+    }
+  };
   return (
     <header
       id="header"
@@ -29,15 +38,15 @@ const Header: React.FC = () => {
 
       {/* Right section */}
       <div className="flex items-center gap-2">
-        <div className="border_pri px-2 py-1">日本語</div>
-        <div className="h-8 w-8 ml-0 lg:ml-6 flex justify-center items-center rounded-full bg-primary">
-          <span className="text-caption1">田</span>
+        <div
+          onClick={handleLanguageSwitcher}
+          className="border_pri px-2 py-1 cursor-pointer select-none"
+        >
+          {language === "ja" ? "English" : "日本語"}
         </div>
-        <div className="flex items-center ml-1 text-body1 text_sec cursor-pointer">
-          <span>田中 太郎</span>
-          <ChevronDown />
-        </div>
-        {/* <LanguageDropdown /> */}
+
+        {/* User Profile   */}
+        <HeaderUserProfile />
       </div>
     </header>
   );

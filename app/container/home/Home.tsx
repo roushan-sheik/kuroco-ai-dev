@@ -1,7 +1,11 @@
 import React from "react";
-import { Search, Plus, FileText, File } from "lucide-react";
+import { Plus, FileText, File } from "lucide-react";
+import HomeSearch from "./components/HomeSearch";
+import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router";
 
 const Home = () => {
+  const { t } = useTranslation("home");
   const recentItems = [
     {
       id: 1,
@@ -23,27 +27,29 @@ const Home = () => {
         {/* Quick Actions Section */}
         <div className="mb-8">
           <h2 className="text-xl font-semibold text-gray-900 mb-6">
-            Quick Actions
+            {t("quickActions")}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Create New Project Card */}
             <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-shadow cursor-pointer">
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0">
-                  <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                    <Plus className="w-5 h-5 text-blue-600" />
+              <NavLink to={"/create-new-project"}>
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                      <Plus className="w-5 h-5 text-blue-600" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-medium text-gray-900 mb-2">
+                      {t("createNewProject")}
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      {t("startRequirementsWithAI")}
+                    </p>
                   </div>
                 </div>
-                <div>
-                  <h3 className="text-lg font-medium text-gray-900 mb-2">
-                    Create New Project
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    Start requirements definition with AI guidance
-                  </p>
-                </div>
-              </div>
+              </NavLink>
             </div>
 
             {/* Create Interview Sheet Card */}
@@ -56,10 +62,10 @@ const Home = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-gray-900 mb-2">
-                    Create Interview Sheet
+                    {t("createInterviewSheet")}
                   </h3>
                   <p className="text-sm text-gray-600">
-                    Conduct efficient interviews
+                    {t("conductInterviews")}
                   </p>
                 </div>
               </div>
@@ -68,21 +74,12 @@ const Home = () => {
         </div>
 
         {/* Search Bar */}
-        <div className="mb-8 relative">
-          <div className="relative">
-            <input
-              type="text"
-              placeholder="Search editors..."
-              className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
-            />
-          </div>
-          <Search className="absolute right-3 z-10 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
-        </div>
+        <HomeSearch />
 
         {/* Recent Access History Section */}
         <div>
           <h2 className="text-xl font-semibold text-gray-900 mb-6">
-            Recent Access History
+            {t("recentAccessHistory")}
           </h2>
 
           <div className="space-y-4 rounded-lg border border-gray-200 lg:p-8 p-4 bg-white">

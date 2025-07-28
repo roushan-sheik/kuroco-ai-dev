@@ -7,3 +7,10 @@ export type TItem = {
 };
 
 export type TRecentItems = TItem[];
+
+export type SearchResult = {
+  id: string;
+  title: string;
+  description: string;
+  path: string;
+};
