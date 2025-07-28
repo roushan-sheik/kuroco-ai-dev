@@ -16,5 +16,9 @@ export default [
       "/create-new-project/team-selection",
       "routes/_layout/TeamSelection.tsx"
     ),
+    route(
+      "/create-new-project/ai-questionnaire",
+      "routes/_layout/AIQuestionnaire.tsx"
+    ),
   ]),
 ] satisfies RouteConfig;
