@@ -20,5 +20,16 @@ export default [
       "/create-new-project/ai-questionnaire",
       "routes/_layout/AIQuestionnaire.tsx"
     ),
+    // Layout EditorPageForAiAssistedGeneration
+    layout("container/EditorPageForAiAssistedGeneration/layout/layout.tsx", [
+      route(
+        "/edit-page/ai-assisted-generation",
+        "routes/_layout/EditPageForAiAssistedGeneration.tsx"
+      ),
+    ]),
+    // Layout EditorPageForAiAssistedGeneration
+    layout("container/EditorPageForFreeForm/layout/layout.tsx", [
+      route("/edit-page/free-form", "routes/_layout/EditorPageForFreeForm.tsx"),
+    ]),
   ]),
 ] satisfies RouteConfig;

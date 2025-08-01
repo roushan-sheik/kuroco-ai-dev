@@ -57,7 +57,7 @@ const AIQuestionnairePage: React.FC = () => {
   const selectedAnswer = state.answers[currentQuestion.id];
 
   return (
-    <div className=" flex items-center justify-center ">
+    <div className=" flex items-center p-6 justify-center ">
       <div className="w-full max-w-4xl overflow-hidden">
         {/* Header */}
         <div className="pb-6">
