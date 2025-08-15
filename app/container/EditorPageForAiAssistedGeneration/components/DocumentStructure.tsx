@@ -4,22 +4,7 @@ import type { DocumentStructureProps, Section, SubItem } from "../types/types";
 import { defaultSections } from "../constants/documentStructure";
 import ProgressBar from "./ui/ProgressBar";
 import SectionHeader from "./ui/SectionHeader";
-
-const CompletionIcon: React.FC<{ completed: boolean }> = ({ completed }) => {
-  if (completed) {
-    return (
-      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-green-500 flex items-center justify-center">
-        <Check size={12} className="text-white" />
-      </div>
-    );
-  }
-
-  return (
-    <div className="flex-shrink-0 w-5 h-5 rounded-full bg-gray-300 flex items-center justify-center">
-      <Circle size={12} className="text-gray-500" />
-    </div>
-  );
-};
+import CompletionIcon from "./ui/CompletionIcon";
 
 const SubItem: React.FC<{ item: SubItem }> = ({ item }) => (
   <div className="flex items-center gap-3 py-2 px-4 hover:bg-gray-50 transition-colors duration-200 rounded-md">
