@@ -1,9 +1,10 @@
 import React from "react";
+import EditPageForAiAssistedGenerationPage from "~/container/EditorPageForAiAssistedGeneration/pages/EditPageForAiAssistedGenerationPage";
 
 const EditPageForAiAssistedGeneration = () => {
   return (
-    <div className="h-full w-full">
-      <div className="bg-primary">EditPageForAiAssistedGeneration Home</div>
+    <div>
+      <EditPageForAiAssistedGenerationPage />
     </div>
   );
 };
