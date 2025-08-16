@@ -16,7 +16,7 @@ const CreateNewProjectPage: React.FC = () => {
       description: "aiDescription",
       icon: <Bot className="w-8 h-8 text-white" />,
       color: "bg-blue-500",
-      route: "#",
+      route: "/create-new-project/ai-questionnaire",
     },
     {
       id: "template",
