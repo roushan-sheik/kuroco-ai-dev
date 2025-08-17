@@ -17,8 +17,12 @@ const RequirementEditor: React.FC = () => {
       {/* Top Bar */}
       <div className="flex items-center justify-between px-4 py-3 border-b bg-white">
         <div className="flex items-center space-x-3">
-          <button className="text-gray-600 hover:text-gray-800">
-            <ArrowLeft /> Back
+          <button
+            // go back to previous page
+            className="flex items-center gap-2 text-gray-600 hover:text-gray-800"
+          >
+            <ArrowLeft size={18} />
+            Back
           </button>
           <h1 className="text-lg font-semibold">要件定義書</h1>
         </div>
