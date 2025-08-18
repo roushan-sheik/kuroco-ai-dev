@@ -1,7 +1,12 @@
 import React from "react";
+import RequirementEditor from "~/container/Editor/RequirementEditor";
 
 const EditPageForAiAssistedGenerationPage = () => {
-  return <div>EditPageForAiAssistedGenerationPage</div>;
+  return (
+    <div>
+      <RequirementEditor />
+    </div>
+  );
 };
 
 export default EditPageForAiAssistedGenerationPage;
