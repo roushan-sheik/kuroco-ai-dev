@@ -4,7 +4,7 @@ import DocumentStructure from "../components/DocumentStructure";
 
 const layout = ({ currentTitle }) => {
   return (
-    <div className=" mt-32 bg-white flex border-l h-screen">
+    <div className=" mt-20 bg-white flex border-l h-screen">
       <div>
         <DocumentStructure />
       </div>

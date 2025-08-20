@@ -15,7 +15,7 @@ const RequirementEditor: React.FC = () => {
   return (
     <div className="flex flex-col">
       {/* Top Bar */}
-      <div className="flex items-center justify-between px-4 py-3 border-b bg-white">
+      <div className="flex items-center justify-between px-4 p-3 border-b bg-white">
         <div className="flex items-center space-x-3">
           <button
             // go back to previous page

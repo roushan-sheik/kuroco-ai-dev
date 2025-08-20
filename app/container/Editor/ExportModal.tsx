@@ -12,7 +12,7 @@ const ExportModal: React.FC<ExportModalProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-40 z-50">
+    <div className="fixed inset-0 flex items-center justify-center bg-black/50 bg-opacity-40 z-50">
       <div className="bg-white rounded-lg shadow-lg w-full max-w-md p-6">
         {/* Header */}
         <h2 className="text-lg font-semibold mb-4">Export Settings</h2>
