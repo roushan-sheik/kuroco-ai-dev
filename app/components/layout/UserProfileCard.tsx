@@ -18,17 +18,8 @@ const UserProfileCard: React.FC<UserProfileCardProps> = ({
   return (
     <div className=" px-4 py-8">
       {/* Title Section */}
-      <h1 className="text-2xl font-semibold text-gray-900">Profile Settings</h1>
-      <p className="text-gray-600 mt-1 mb-6">
-        Manage your account information and preferences
-      </p>
-
       {/* Card Section */}
       <div className="bg-white rounded-lg p-0">
-        <h2 className="text-lg font-medium text-gray-800 mb-4">
-          Basic Information
-        </h2>
-
         {/* Profile Info Row */}
         <div className="flex items-start gap-4">
           {/* Avatar */}

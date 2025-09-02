@@ -8,6 +8,8 @@ import {
 export default [
   route("login", "routes/login.tsx"),
   route("register", "routes/register.tsx"),
+  // ✅ Profile Settings Route
+  route("/profile-settings", "routes/ProfileSettings.tsx"),
 
   layout("components/layout/MainLayout.tsx", [
     index("routes/_layout/index.tsx"),
@@ -33,8 +35,5 @@ export default [
     layout("container/EditorPageForFreeForm/layout/layout.tsx", [
       route("/edit-page/free-form", "routes/_layout/EditorPageForFreeForm.tsx"),
     ]),
-
-    // ✅ Profile Settings Route
-    route("/profile-settings", "routes/_layout/ProfileSettings.tsx"),
   ]),
 ] satisfies RouteConfig;

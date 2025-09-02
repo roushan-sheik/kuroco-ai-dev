@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import PasswordManagement from "~/components/layout/components/PasswordManagemant";
 import UserProfileCard from "~/components/layout/UserProfileCard";
+import JoinedProjects from "~/components/layout/components/JoinedProjects";
 
 const ProfileSettings: React.FC = () => {
   const [newPassword, setNewPassword] = useState("");
@@ -18,8 +19,12 @@ const ProfileSettings: React.FC = () => {
   const passwordStrength = newPassword.length > 6 ? "Strong" : "Weak";
 
   return (
-    <div className="min-h-screen bg-gray-50 p-6">
+    <div className="min-h-screen max-w-[1300px] mx-auto bg-gray-50 p-6 mt-8">
       {/* Header */}
+      <h1 className="text-2xl font-semibold text-gray-900">Profile Settings</h1>
+      <p className="text-gray-600 mt-1 mb-6">
+        Manage your account information and preferences
+      </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Left Column */}
@@ -85,7 +90,7 @@ const ProfileSettings: React.FC = () => {
 
           {/* Joined Projects */}
           <div className="bg-white rounded-2xl shadow p-6">
-            <h2 className="text-lg font-semibold mb-4">Joined Projects</h2>
+            {/* <h2 className="text-lg font-semibold mb-4">Joined Projects</h2>
             <div className="space-y-4">
               <div>
                 <p className="font-medium">E-commerce Renewal</p>
@@ -119,7 +124,8 @@ const ProfileSettings: React.FC = () => {
                 </div>
                 <p className="text-sm text-gray-500">100% • Consultant</p>
               </div>
-            </div>
+            </div> */}
+            <JoinedProjects />
           </div>
         </div>
 
@@ -132,11 +138,11 @@ const ProfileSettings: React.FC = () => {
               <span className="inline-flex items-center px-5 py-3 text-md rounded-full bg-indigo-500 text-white">
                 <Shield className="w-5 h-5 mr-1" /> Administrator
               </span>
-              <p className="font-normal text-sm text-gray-600 mt-2">
+              <p className="font-normal text-sm text-gray-600 mt-4">
                 Full system administration access
               </p>
             </div>
-            <ul className="space-y-2 text-sm text-gray-600">
+            <ul className="space-y-2 text-sm text-gray-600 mt-4">
               <p className="text-md font-bold">Available Features:</p>
               <li className="flex items-center">
                 <Users className="w-4 h-4 mr-2 text-green-500" /> User
@@ -195,7 +201,7 @@ const ProfileSettings: React.FC = () => {
               </div>
 
               {/* Progress bar wrapper */}
-              <div className="w-full h-3 bg-gray-200 rounded-full mt-2">
+              <div className="w-full h-3 bg-gray-200 rounded-full mt-4">
                 <div
                   className="h-3 bg-indigo-500 rounded-full"
                   style={{ width: "30%" }} // এখানে dynamic % বসবে
@@ -203,10 +209,13 @@ const ProfileSettings: React.FC = () => {
               </div>
 
               {/* Remaining */}
-              <div className="flex items-center justify-between w-full mt-2">
+              <div className="flex items-center justify-between w-full mt-4">
                 <p className="text-sm text-gray-600">Remaining</p>
                 <p className="text-sm font-semibold text-green-600">34,580</p>
               </div>
+            </div>
+            <div className="mt-4 text-left text-sm text-gray-500">
+              <hr />
             </div>
           </div>
 
@@ -240,15 +249,24 @@ const ProfileSettings: React.FC = () => {
                 <li> Data Export</li>
               </div>
             </ul>
+            <div className="my-4 text-left text-sm text-gray-500">
+              <hr />
+              <p className="mt-4">Next reset: February 1, 2024</p>
+            </div>
             <button className="mt-4 w-full px-4 py-2 rounded-lg border text-indigo-600 hover:bg-indigo-50">
               Change Plan
             </button>
           </div>
 
           {/* Save Button */}
-          <button className="w-full py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow hover:bg-indigo-700">
-            Save Changes
-          </button>
+          <div className="bg-white rounded-2xl shadow p-6">
+            <button className="w-full py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow hover:bg-indigo-700">
+              Save Changes
+            </button>
+            <p className="font-normal text-sm text-gray-600 mt-4 text-center">
+              Last saved: January 15, 2024 14:30
+            </p>
+          </div>
         </div>
       </div>
     </div>
