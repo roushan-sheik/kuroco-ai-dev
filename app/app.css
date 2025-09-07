@@ -95,7 +95,6 @@
 body {
   background: rgb(249, 250, 251);
 }
-
 .dark {
   --background: oklch(0.18 0.02 270);
   --foreground: oklch(0.95 0.01 280);
@@ -206,4 +205,11 @@ body {
   .text-caption2 {
     @apply text-[0.625rem] sm:text-[0.6875rem] font-medium leading-[1.4] text-border;
   }
+}
+
+.bg-pri {
+  background: #4285f4;
+}
+.text-pri {
+  color: #4285f4;
 }
