@@ -6,7 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import { useTranslation } from "react-i18next";
 import { useLanguage } from "~/context/LanguageContext";
 import { NavLink } from "react-router";
-import { Loader2 } from "lucide-react";
+import { Bot, Loader2 } from "lucide-react";
 
 // Validation schema
 const registerSchema = z
@@ -125,14 +125,8 @@ const RegisterPage = () => {
         <div className="bg-white rounded-3xl shadow-2xl p-8 relative">
           {/* Robot Icon */}
           <div className="flex justify-center mb-6">
-            <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-              <svg
-                className="w-6 h-6 text-white"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-              </svg>
+            <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+              <Bot className="w-6 h-6 text-white" />
             </div>
           </div>
 

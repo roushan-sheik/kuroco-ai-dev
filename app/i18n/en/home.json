@@ -24,5 +24,7 @@
   "developmentTeam": "Development Team",
   "addToExistingTeam": "Add to existing team",
   "private": "Private",
-  "privateDescription": "Personal project"
+  "privateDescription": "Personal project",
+
+  "about": "About Page title"
 }

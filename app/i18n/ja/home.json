@@ -24,5 +24,7 @@
   "developmentTeam": "開発チーム",
   "addToExistingTeam": "既存のチームに追加",
   "private": "プライベート",
-  "privateDescription": "個人プロジェクト"
+  "privateDescription": "個人プロジェクト",
+
+  "about": "個人プロジェクト"
 }
